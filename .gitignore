@@ -1,1 +1,3 @@
 .env
+.Trash*
+.ipynb_checkpoints
