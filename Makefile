@@ -25,7 +25,7 @@ up:
 open:
 	@echo "Finding the JupyterLab URL..."
 	@URL=$$(docker logs jupyter_lab 2>&1 | grep 'http://127.0.0.1:8888/lab?token' | tail -n 1); \
-	xdg-open $$URL || echo "Failed to open the URL in the browser."; \
+	xdg-open $$URL || echo "Failed to open the URL in the browser.";
 	@echo "Opening the browser with the URL: $$URL";
 	
 #cmd.exe /c start $$URL || echo "Failed to open the URL in the default browser."
