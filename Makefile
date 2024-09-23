@@ -45,9 +45,6 @@ run:
 down:
 	@docker compose down
 
-python:
-	@docker exec -it python bash
-
 jupyter:
 	@docker exec -it jupyter_lab bash
 
